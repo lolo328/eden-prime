@@ -1,75 +1,61 @@
+/* Estilo geral */
 body {
-    background-color: #0A1B2A; /* Fundo escuro, semelhante ao espaço profundo */
-    color: #EAF0F6; /* Texto branco suave para melhor legibilidade */
-    font-family: "Bai Jamjuree", sans-serif;
+    font-family: 'Bai Jamjuree', sans-serif;
+    background: linear-gradient(120deg, #000428, #004e92); /* Fundo gradiente */
+    color: #fff;
+    margin: 0;
+    text-align: center;
+}
+
+/* Centralizar o conteúdo */
+main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Preenche a tela completamente */
-    margin: 0;
-    overflow: hidden; /* Remove rolagem desnecessária */
-body {
-    background-image: url('img/fundo-espaco.png'); /* Caminho da imagem */
-    background-size: cover; /* Garante que a imagem cubra toda a tela */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita repetição da imagem */
-    color: white;
-    font-family: "Bai Jamjuree", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Altura da tela inteira */
-    margin: 0;
-    overflow: hidden;
+    height: 100vh;
+    padding: 20px;
 }
 
-button {
-    background-color: #1D80D0; /* Azul brilhante que remete à tecnologia */
-    color: #EAF0F6; /* Texto branco suave */
-    font-family: "Bai Jamjuree", sans-serif;
-    font-size: 16px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px; /* Bordas arredondadas para um estilo moderno */
-    margin: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Animação ao passar o mouse */
-}
-
-button:hover {
-    background-color: #4DA1F1; /* Tom mais claro no hover */
-    transform: scale(1.1); /* Aumenta ligeiramente o botão */
-}
-
+/* Estilo dos passos */
 .passo {
     display: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
 }
 
 .passo.ativo {
     display: block;
+    opacity: 1;
+    transform: translateY(0);
 }
 
-main {
-    text-align: center;
-    max-width: 80%;
-    margin: 0 auto;
-    animation: fadeIn 0.8s ease-in-out; /* Efeito de transição suave */
+/* Estilo dos botões */
+.btn-proximo {
+    background: linear-gradient(90deg, #1CB5E0, #000428);
+    border: 1px solid #1CB5E0;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+    margin: 10px;
 }
 
-img {
-    max-width: 100%;
-    border-radius: 10px; /* Deixa as imagens levemente arredondadas */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Adiciona um efeito de profundidade */
+.btn-proximo:hover {
+    background: linear-gradient(90deg, #000428, #1CB5E0);
+    transform: scale(1.1);
 }
 
-/* Animação de fade-in para o conteúdo */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
+/* Responsividade */
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+
+    .btn-proximo {
+        width: 90%;
     }
 }
