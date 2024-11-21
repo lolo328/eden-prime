@@ -1,0 +1,62 @@
+body {
+    background-color: #0A1B2A; /* Fundo escuro, semelhante ao espaço profundo */
+    color: #EAF0F6; /* Texto branco suave para melhor legibilidade */
+    font-family: "Bai Jamjuree", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Preenche a tela completamente */
+    margin: 0;
+    overflow: hidden; /* Remove rolagem desnecessária */
+}
+
+button {
+    background-color: #1D80D0; /* Azul brilhante que remete à tecnologia */
+    color: #EAF0F6; /* Texto branco suave */
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas para um estilo moderno */
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animação ao passar o mouse */
+}
+
+button:hover {
+    background-color: #4DA1F1; /* Tom mais claro no hover */
+    transform: scale(1.1); /* Aumenta ligeiramente o botão */
+}
+
+.passo {
+    display: none;
+}
+
+.passo.ativo {
+    display: block;
+}
+
+main {
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+    animation: fadeIn 0.8s ease-in-out; /* Efeito de transição suave */
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px; /* Deixa as imagens levemente arredondadas */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Adiciona um efeito de profundidade */
+}
+
+/* Animação de fade-in para o conteúdo */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
