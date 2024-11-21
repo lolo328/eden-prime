@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Em Busca de Éden Prime</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/espaco-passo0.png" alt="">
+            <p>Você é um explorador espacial, e um dia descobre um diário perdido de um cientista que fala sobre um planeta lendário chamado Éden Prime. Ele descreve pistas espalhadas por diversos sistemas estelares. Agora, você decide seguir as pistas para encontrá-lo.</p>
+            <button class="btn-proximo" data-proximo="1">Ir para o sistema Andrómeda</button>
+            <button class="btn-proximo" data-proximo="2">Explorar o sistema Sirius</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>No sistema Andrómeda, você encontra uma estação espacial abandonada. Há um console que parece ter registros antigos.</p>
+            <button class="btn-proximo" data-proximo="3">Acessar os registros</button>
+            <button class="btn-proximo" data-proximo="4">Ignorar e explorar o espaço ao redor</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Em Sirius, você pousa em um planeta gelado. Há vestígios de uma civilização antiga que pode conter pistas sobre Éden Prime.</p>
+            <button class="btn-proximo" data-proximo="5">Explorar ruínas antigas</button>
+            <button class="btn-proximo" data-proximo="6">Escanear o planeta do espaço</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Nos registros da estação espacial, você descobre coordenadas que apontam para um sistema desconhecido chamado Lyra Prime.</p>
+            <button class="btn-proximo" data-proximo="7">Viajar para Lyra Prime</button>
+        </div>
+        <div class="passo" id="passo-4">
+            <img src="img/espaco-passo4.png" alt="imagem de volta para sua nave">
+            <p>Você decide que a busca é arriscada demais e retorna para sua nave, sempre se perguntando o que teria encontrado.</p>
+        </div>
+        <div class="passo" id="passo-5">
+            <p>Nas ruínas antigas, você encontra um artefato alienígena que projeta uma imagem de Éden Prime, apontando para o sistema Lyra Prime.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para Lyra Prime</button>
+        </div>
+        <div class="passo" id="passo-6">
+            <p>Escaneando o planeta, você encontra sinais de tecnologia avançada, mas nenhum indício claro sobre Éden Prime.</p>
+            <button class="btn-proximo" data-proximo="5">Descer para explorar as ruínas</button>
+        </div>
+        <div class="passo" id="passo-7">
+            <p>Em Lyra Prime, você encontra dois portais misteriosos. Qual você escolhe?</p>
+            <button class="btn-proximo" data-proximo="9">O portal azul</button>
+            <button class="btn-proximo" data-proximo="10">O portal dourado</button>
+        </div>
+        <div class="passo" id="passo-9">
+            <p>O portal azul o transporta para um espaço vazio. Você fica preso, sem pistas do caminho de volta.</p>
+            <button class="btn-proximo" data-proximo="7">Tentar novamente</button>
+        </div>
+        <div class="passo" id="passo-10">
+            <p>O portal dourado o leva a Éden Prime, um planeta paradisíaco repleto de vida e energia desconhecida. Você decide estudá-lo e protegê-lo.</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
