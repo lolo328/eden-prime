@@ -8,6 +8,19 @@ body {
     height: 100vh; /* Preenche a tela completamente */
     margin: 0;
     overflow: hidden; /* Remove rolagem desnecessária */
+body {
+    background-image: url('img/fundo-espaco.png'); /* Caminho da imagem */
+    background-size: cover; /* Garante que a imagem cubra toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    color: white;
+    font-family: "Bai Jamjuree", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura da tela inteira */
+    margin: 0;
+    overflow: hidden;
 }
 
 button {
